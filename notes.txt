@@ -1,0 +1,31 @@
+Login times
+
+Schedule a script to run after login.
+	#If the login type is ‘interactive physical’
+		#Note the current time T
+		#Walk back through the logs to find the latest event for an ‘interactive physical’ login F
+		#Calculate the time difference between F and T as D
+
+		#Extra credit
+			#select the group policy log between F and T
+			#total the durations between all entries as P
+				
+		#Output F, T, D, P, PC name, Username as JSON to PowerBI
+		#Output F, T, D, P, PC name, Username as JSON as custom log entry
+
+
+Example data
+
+Computer = PC name
+User = Username
+LoginStarted = F
+LoginDuration = D
+GroupPolicy = P
+LoginEnded = T
+
+Computer = TRJ269-SD1
+User = sfduff
+LoginStarted = 27/02/19 02:33:00.00
+LoginDuration = 00:01:00.00
+GroupPolicy = 00:00:05.00
+LoginEnded = 27/02/19 02:34:00.00
