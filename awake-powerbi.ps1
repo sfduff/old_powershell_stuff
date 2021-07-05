@@ -1,4 +1,5 @@
 # WOL Checkins - SFDUFF 12/07/2017
+# scheduled to run client side to update powerbi api endpoint
 
 $colItems = get-wmiobject -class "Win32_NetworkAdapterConfiguration" -namespace "root\CIMV2" -computername "." -filter "IPEnabled = true"
 foreach ($objItem in $colItems) {
